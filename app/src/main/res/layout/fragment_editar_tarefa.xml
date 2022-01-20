@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemViewAgendadas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp"
+    android:elevation="4dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:id="@+id/linearTarefa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtLabelTitulo"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/txt_label_titulo"
+            android:textColor="@color/teal_500"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtViewTitulo"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/teal_500"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearTarefa">
+
+        <TextView
+            android:id="@+id/txtLabelDescricao"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/txt_label_descriao"
+            android:textColor="@color/teal_500"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtViewDescricao"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/teal_500"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearData"
+        android:layout_width="108dp"
+        android:layout_height="38dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtLabelData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/txt_label_data_da_tarefa"
+            android:textColor="@color/teal_500"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtViewData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/teal_500"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearCheckbox"
+        android:layout_width="114dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearData">
+
+        <CheckBox
+            android:id="@+id/checkboxConcluirTarefa"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtLabelCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/txt_label_checkbox_concluir"
+            android:textColor="@color/teal_500"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

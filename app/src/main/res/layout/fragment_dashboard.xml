@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <LinearLayout
+        android:id="@+id/linearDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardNovaTarefa"
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:backgroundTint="@color/teal_500"
+            android:focusable="false"
+            android:onClick="click"
+            app:cardCornerRadius="20sp">
+
+            <LinearLayout
+                android:id="@+id/linearNovaTarefa"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imgNovaTarefa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ic_create" />
+
+                <TextView
+                    android:id="@+id/txtNovaTarefa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/txt_label_nova_tarefa"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTarefaAgendada"
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/transparente"
+            android:backgroundTint="@color/teal_500"
+            android:focusable="false"
+            android:onClick="click"
+            app:cardCornerRadius="20sp">
+
+            <LinearLayout
+                android:id="@+id/linearTarefaAgendada"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imgTarefaAgendada"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ic_agenda" />
+
+                <TextView
+                    android:id="@+id/txtTarefaAgendada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/txt_label_tarefas_agendadas"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTarefaConcluida"
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:background="@color/transparente"
+            android:backgroundTint="@color/teal_500"
+            android:elevation="20dp"
+            android:focusable="false"
+            android:onClick="click"
+            app:cardCornerRadius="20sp">
+
+            <LinearLayout
+                android:id="@+id/linearTarefaConcluida"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imgTarefaConcluida"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ic_check" />
+
+                <TextView
+                    android:id="@+id/txtTarefaConcluida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/txt_label_tarefas_concluidas"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

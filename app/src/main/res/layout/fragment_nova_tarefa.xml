@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/idFragmentNovaTarefa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.novatarefa.NovaTarefaFragment">
+
+    <TextView
+        android:id="@+id/txt_titulo_nova_tarefa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_titulo_nova_tarefa"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/teal_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearFormNovaTarefa"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo_nova_tarefa">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="443dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_titulo" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayouDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="443dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputDescricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_descricao" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="443dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:gravity="center_vertical"
+                android:focusable="false"
+                android:paddingTop="17dp"
+                android:drawableLeft="@drawable/ic_calendar"
+                android:hint="@string/input_data_da_tarefa"
+                android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnCadastrarTarefa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_500"
+            android:text="@string/btn_cadastrar" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Gerenciador de Tarefas</string>
+    <string name="titulo_dashboard">Dashboard</string>
+    <string name="titulo_tarefa_agendada">Agendadas</string>
+    <string name="titulo_tarefa_concluida">Concluídas</string>
+    <string name="titulo_lista_de_tarefas">Gerenciador de Tarefas</string>
+    <string name="titulo_nova_tarefa">Nova Tarefa</string>
+    <string name="input_titulo">Título</string>
+    <string name="input_descricao">Descrição</string>
+    <string name="input_data_da_tarefa">Data da tarefa</string>
+    <string name="txt_titulo_nova_tarefa">Nova Tarefa</string>
+    <string name="txt_titulo_tarefas_agendadas">Tarefas Agendadas</string>
+    <string name="txt_label_tarefas_agendadas">Agendadas</string>
+    <string name="txt_label_tarefas_concluidas">Concluídas</string>
+    <string name="txt_label_data_da_tarefa">Data:</string>
+    <string name="txt_label_nova_tarefa">Nova Tarefa</string>
+    <string name="btn_cadastrar">Cadastrar</string>
+    <string name="btn_salvar">Salvar</string>
+    <string name="txt_label_checkbox_concluir">Concluir</string>
+    <string name="txt_label_checkbox_concluida">Concluída</string>
+    <string name="txt_label_titulo">Título:</string>
+    <string name="txt_label_descriao">Descrição:</string>
+    <string name="btn_editar">Editar</string>
+    <string name="btn_excluir">Excluir</string>
+    <string name="txt_titulo_tarefa">Tarefa</string>
+    <string name="txt_titulo_tarefas_concluidas">Tarefas Concluídas</string>
+    <string name="search_concluidas">Pesquisar tarefa</string>
+</resources>

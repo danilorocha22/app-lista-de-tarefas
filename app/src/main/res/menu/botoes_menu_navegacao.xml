@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_dashboard"
+        android:onClick="click"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/titulo_dashboard" />
+
+    <item
+        android:id="@+id/item_tarefa_agendada"
+        android:onClick="click"
+        android:icon="@drawable/ic_baseline_calendar_today_24"
+        android:title="@string/titulo_tarefa_agendada" />
+
+    <item
+        android:id="@+id/item_tarefa_concluida"
+        android:onClick="click"
+        android:icon="@drawable/ic_checklist"
+        android:title="@string/titulo_tarefa_concluida" />
+</menu>
